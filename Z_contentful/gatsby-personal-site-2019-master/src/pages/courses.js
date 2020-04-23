@@ -1,19 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import Courses from "../components/Courses/Courses"
+import SEO from "../components/seo"
+
 const courses = () => {
   return (
     <Layout>
-      <h1
-        style={{
-          textAlign: "center",
-          textTransform: "capitalize",
-          marginTop: "4rem",
-        }}
-      >
-        courses page
-        <Courses />
-      </h1>
+      <SEO title="Courses" />
+      <Courses />
     </Layout>
   )
 }
